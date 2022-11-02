@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.what{
+			width: 100px;
+			height: 200px;
+			background-image: url(https://i.ytimg.com/vi/Ko_of624pPA/maxresdefault.jpg);
+			display: inline-block;
+			background-size: contain;
+			background-repeat: no-repeat;
+			transition: 2s;
+		}
+		.what:hover{
+			transform:rotate(720deg);
+
+		}
+
+	</style>
+	
+
+
+</head>
+<body>
+	<script type="text/javascript">
+function makeThomas (){
+	var thomas = document.createElement("div")
+	document.body.appendChild(thomas);
+	thomas.classList.add("what");
+		}
+setInterval(
+		makeThomas, 500)
+	</script>
+
+</body>
+</html>
