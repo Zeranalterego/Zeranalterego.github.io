@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#thing{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div id ="thing"></div>
+
+	<script type="text/javascript">
+		var clickCounter = 0;
+
+		thing.addEventListener(
+			"click", function(){
+				clickCounter = clickCounter+1
+
+			if (clickCounter%2==1) {
+					console.log(clickCounter);
+					thing.style.width = "400" + "px"
+					thing.style.height = "400" + "px"
+					thing.style.backgroundColor = "blue";}
+		
+			if (clickCounter%2 == 0) {
+					console.log(clickCounter);
+					thing.style.width = "200" + "px"
+					thing.style.height = "200" + "px"
+					thing.style.backgroundColor = "red";}
+				
+		console.log("tf u doin");
+			})
+	</script>
+
+</body>
+</html>

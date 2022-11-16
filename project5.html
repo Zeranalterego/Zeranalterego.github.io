@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Varela+Round&display=swap" rel="stylesheet">
+	<style type="text/css">
+		#dog{
+			width: 800px;
+			height: 800px;
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-image: url(dog.JPG);
+			position: absolute;
+			left: 200 px;
+			top: 200 px;
+
+		}
+
+		#text{
+			width: 200px;
+			height: 300px;
+			background-color: transparent;
+			position: absolute;
+			left: 400 px;
+			top: 400 px;
+			font-size: 90px;
+			color: white;
+
+
+		}
+	</style>
+</head>
+<body>
+	<div id = "dog"></div>
+	<div id = "text"> DOG. </div>
+
+	<script type="text/javascript">
+		var clickCounter = 0;
+		dog.addEventListener(
+			"click", function(){
+				clickCounter = clickCounter+1
+				console.log(clickCounter);
+					dog.style.backgroundImage = "url(dog"+clickCounter+".JPG)";
+					console.log(dog.backgroundImage);
+
+				if (clickCounter == 3) {
+					text.style.color = "black";
+				}
+				if (clickCounter == 4) {
+					text.style.color = "white";
+				}
+
+				if (clickCounter == 17) {
+					clickCounter = 0;
+				}
+			})
+	</script>
+</body>
+</html>

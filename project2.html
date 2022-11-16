@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#box{
+			width: 174px;
+			height: 98px;
+			background-color: blue;
+			background-image: url(narutorunner.jpeg);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+	<div id ="box"></div> 
+
+	<script type="text/javascript">
+		document.addEventListener("mousemove", function(event){
+		box.style.left =
+		event.clientX - 87 + "px"
+		box.style.top =
+		event.clientY - 49 + "px"})
+	</script>
+</body>
+</html>
