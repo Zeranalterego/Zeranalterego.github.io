@@ -1,0 +1,118 @@
+to
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@200&family=Varela+Round&display=swap" rel="stylesheet">
+    <style>
+        
+        h1{
+            font-family:"Indie Flower";
+            font-size:50px;
+            color:hotpink;
+        }
+
+        p{
+            font-family: "Indie Flower";
+            font-size:20px;
+            color:hotpink;
+        }
+
+
+    </style>
+</head>
+<body>
+<h1> A random collection of lovely images I found through my Google-using prowess and the daily scrolls I have through reddit <h1>
+
+
+
+<p> I have no idea what I'm doing actually no I do have some idea what I'm doing I just also really have no idea what I'm doing at the same time but like if u wanna see the code for this page, right click and choose "view page source" I guess?<p>
+
+
+<script type="text/javascript">
+
+//For all of your media, to use this, label each file  with numbers (eg.1.jpg, 2.jpg) and keep them in the same folder as this html file. If they are not jpgs, change the extension "jpg" in the recipe below (line 25) to whatever file type they are.  
+
+//Below is the recipe to make the squares appear on the page//
+    
+    function makeSquare (i) {
+
+            var square = document.createElement('div');
+                        document.body.appendChild(square);
+            square.style.width = "330px";
+            square.style.height = "330px";
+            square.style.display = "inline-block";
+            square.style.margin = "10px";
+            square.style.backgroundRepeat = "no-repeat";
+            square.style.border = "1px";
+            square.style.backgroundColor = "transparent";
+
+            square.style.backgroundImage = "url(uhm" + i + ".jpg)";
+
+            square.style.backgroundSize = "contain";
+            square.id = "square" + i;};
+
+//Below, is the for loop in which where the squares are actually made. This for loop is where the function above is actually called. It is called 14 times, (between the values of 0 and 15) and because the variable i is declared in the for loop and is then being passed to the makeSquare recipe, each time the function runs, i changes in value (+1). Thus, the attributes that involve the i change in value as well (eg. the id attribute changes to be whatever i was last time, plus 1.)//
+
+    for (var i = 0; i < 20; i=i+1) 
+    { makeSquare(i);}
+
+    function random_color(colors)
+    {
+    return colors[Math.floor(Math.random()*colors.length)];  
+    }
+    var colors = ["blue", "red", "purple", "grey", "black", "green", "orange", "yellow", "pink", "lightblue", "maroon"];
+
+    
+    
+
+    var clickCounter = 0;
+        square0.addEventListener(
+            "click", function(){
+                var backgroundcolor = random_color(colors);
+                console.log(backgroundcolor)
+                square0.style.backgroundColor = backgroundcolor;
+                var backgroundcolor = random_color(colors);
+                square1.style.backgroundColor = backgroundcolor;
+                var backgroundcolor = random_color(colors);
+                square2.style.backgroundColor = backgroundcolor;
+                var backgroundcolor = random_color(colors);
+                square3.style.backgroundColor = backgroundcolor;
+                var backgroundcolor = random_color(colors);
+                square4.style.backgroundColor = backgroundcolor;
+                var backgroundcolor = random_color(colors);
+                square5.style.backgroundColor = backgroundcolor;
+                var backgroundcolor = random_color(colors);
+                square6.style.backgroundColor = backgroundcolor;
+                var backgroundcolor = random_color(colors);
+                square7.style.backgroundColor = backgroundcolor;
+                var backgroundcolor = random_color(colors);
+                square8.style.backgroundColor = backgroundcolor;
+                var backgroundcolor = random_color(colors);
+                square9.style.backgroundColor = backgroundcolor;
+                var backgroundcolor = random_color(colors);
+                square10.style.backgroundColor =backgroundcolor;
+                var backgroundcolor = random_color(colors);
+                square11.style.backgroundColor = backgroundcolor;
+                var backgroundcolor = random_color(colors);
+                square12.style.backgroundColor = backgroundcolor;
+                var backgroundcolor = random_color(colors);
+                square13.style.backgroundColor = backgroundcolor;
+                var backgroundcolor = random_color(colors);
+                square14.style.backgroundColor = backgroundcolor;
+                var backgroundcolor = random_color(colors);
+                square15.style.backgroundColor = backgroundcolor;
+                var backgroundcolor = random_color(colors);
+                square16.style.backgroundColor = backgroundcolor;
+                var backgroundcolor = random_color(colors);
+                square17.style.backgroundColor = backgroundcolor;
+                var backgroundcolor = random_color(colors);
+                square18.style.backgroundColor = backgroundcolor;
+                var backgroundcolor = random_color(colors);
+                square19.style.backgroundColor = backgroundcolor;
+                
+           })
+</script>
+</body>
+</html>

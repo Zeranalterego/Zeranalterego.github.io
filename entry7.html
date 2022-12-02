@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+	<style type="text/css"> 
+		p{
+
+		font-family: 'Poppins';
+		font-size: 30px;
+
+		}
+
+</style>
+	<script type="text/javascript">
+		alert ("I finished this project and wrote this entry in long house instead of reading or socializing so be grateful or don't be grateful I don't really care this is my own fault")
+	</script>
+</head>
+
+<body>
+	<p> November 1, 2022 <br> For the basic background image changes, it was pretty simple. I saved some images in my folder, named them in a specific order with numbers that corresponded to the value of i, so every square had a different image. The thing that took the longest was me trying to change the background color of the squares every single time the user clicked on the first square, but I wantede the changes to be random, so that required making a random list in javascript, getting an output, storing the output in a variable, and making a function that made the background color of the squares change into that color stored in the variable every time someone clicked. Thankfully, with the help of some Google searches and w3schools, I figured it out. Basically, how it works is that I first created a function called random_color that used some random Math functions in it to get a random value inside a list. After that, I created the actual list of colors and to test it, I ran random_color in the console. So the random_color function worked. Below it, I created the click function using previous click functions that I made, added an eventListener to the first square, and inside the function, I created a variable called backgroundcolor, and since the output was contained within the function random_color, I set backgroundcolor's value to literally just running the function random_color once. That being done, I console logged backgroundcolor to make sure it stored the right thing, and it did, do I just added the rest of the function where I made every square's background color the variable background color using intuition and a lot of copy pasting, because I couldn't figure out how to make all the squares change their background color with the previous code that created the squares with just one line of code, so I just copy pasted the code 20 times and changed the square id every time. After running it through, checking console, and fixing countless little logistical and small mistakes such as capitalization, I finally got it to work, and I was bored so I just copy pasted the code that made the variable backgroundcolor contain a random color before every line of code that made a square's background color change to that random color, so now every single square, whenever you click the first square, changes into a different random color in the color list, but obviously, repeats are possible. </p>
+
+</body>
+</html>
