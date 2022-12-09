@@ -5,6 +5,17 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 	<style type="text/css">
+		#joji{
+			width: 1600px;
+			height: 600px;
+			background-image: url(https://i.kym-cdn.com/entries/icons/original/000/012/255/phpThumb_generated_thumbnail.jpg);
+			background-color: transparent;
+			background-size: contain;
+			background-repeat: no-repeat;
+			position:  absolute;
+			left: 180px;
+			top: 50px;
+		}
 		#box{
 			width:600px;
 			height: 600px;
@@ -20,6 +31,7 @@
 	</style>
 </head>
 <body>
+	<div id = "joji"></div>
 	<div id = "box"></div>
 	<center>
 	<p> click on the box to face my absolutely based opinions (and comments) on some of your favorite artists (although they're just mostly like artists I have experience with and artists I like)
@@ -31,6 +43,8 @@
     {
     	var i = Math.round(Math.random()*artists.length);
 		box.innerText = artists[i]
+		box.style.color = "white"
+		
 	})
 	</script>
 </body>
