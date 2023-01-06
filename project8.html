@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@200&family=Varela+Round&display=swap" rel="stylesheet">
+	<style type="text/css">
+
+		table{
+			font-size: 30px;
+			font-family: Indie Flower;
+			
+
+		}
+		td{
+			border: solid black 10px;
+			
+		}
+	</style>
+</head>
+<body>
+
+	<table>
+		<tr>
+			<td>What is a variable? <br> What do we use them for? <br> How do we create (aka declare) them?</td>
+			<td>A function is essentially an entity within a code that stores data. <br> We can use them for a lot of things, mainly within functions, where they can be either an input or output. <br> We declare them by simply writing the word var in the script section of the html file. </td>
+		</tr>
+		<tr>
+			<td>What is a function? <br> What is their structure? <br> What is their syntax/structure?</td>
+			<td>A function is basically a line of code that takes in an input, and gives an output based on that input. <br> They operate on an input-output structure. <br> The syntax of a function is function (input){output}.</td>
+		</tr>
+		<tr>
+			<td>When do we use conditional statements (i.e. if else statements? What is their syntax and structure?</td>
+			<td> We use if and else statements when we want different things to happen when variables, function outputs, or user inputs are different. Their syntax is if 'data type' =/>/< 'data type', on the next line, whatever code you want to run if the if statement is true. Then, you can add an else statement to follow up with the same syntax.</td>
+		</tr>
+		<tr>
+			<td>What are the different types of data in javascript?</td>
+			<td>Strings, numbers, and booleans are the three main data types.</td>
+		</tr>
+		<tr>
+			<td>What is an event listener? When do we use them? What is their syntax/structure?</td>
+			<td>An event listener kinda just listens for an event to happen. It's a function used when we want something to run when something else happens, like, say, a click, for example. And event listener can recognize actions by the user, such as clicks and mouse movement.</td>
+		</tr>
+		<tr>
+			<td>What is an array? When do we use them? How do we make and write them?</td>
+			<td>An array is a list of data points stored within a single variable. We use them usually when we want to select a random data point from a single variable, or if we want to made code more efficient. We write them like var variablename = ['data point', 'data point', 'data point', etc].</td>
+		</tr>
+		<tr>
+			<td>What is Math.random()? What does it do? When do we use it? </td>
+			<td>Math.random is a function that generates a random number. We use it when we want a random numerical value that we can either use directly for something, or so that we can use the numerical value to correspond to something on an array.</td>
+		</tr>
+		
+		<tr>
+			<td>Is Rick Astley ever going to give you up?</td>
+			<td>No.</td>
+		</tr>
+		<tr>
+			<td>Is he going to let you down?</td>
+			<td>No. He never will. </td>
+		</tr>
+		
+	</table>
+	<script type="text/javascript">
+
+			var cells = document.getElementsByTagName("td");
+
+			cells = Array.from(cells)
+
+		
+
+
+
+
+
+		function random_color(colors)
+    	{	
+    	return colors[Math.floor(Math.random()*colors.length)];  
+    	}
+    	var colors = ["lightgreen", "orange", "yellow", "pink", "lightblue",];
+
+    	cells.forEach(function(element){
+    		var random = Math.round(Math.random()*9)
+    		element.style.backgroundColor = colors[random]
+    	})
+
+    
+
+    	
+	</script>
+</body>
+</html>
