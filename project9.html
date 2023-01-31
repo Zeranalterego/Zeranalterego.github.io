@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.video-container{
+  			width: 100vw;
+  			height: 100vh;
+		}
+    
+		iframe {
+  			position: absolute;
+  			top: 200px;
+  			left: 485px;
+  			width: 500px;
+  			height: 400px;
+  			
+			}
+		#one{
+			width: 210px;
+			height: 1000px;
+			background-color: transparent;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+		
+		}
+		#two{
+			width: 210px;
+			height: 1000px;
+			background-color: transparent;
+			position: absolute;
+			left: 210px;
+			top: 0px;
+
+		}
+		#three{
+			width: 210px;
+			height: 1000px;
+			background-color: transparent;
+			position: absolute;
+			left: 420px;
+			top: 0px;
+
+		
+		}
+		#four{
+			width: 210px;
+			height: 1000px;
+			background-color: transparent;
+			position: absolute;
+			left: 630px;
+			top: 0px;
+		}
+		#five{
+			width: 210px;
+			height: 1000px;
+			background-color: transparent;
+			position: absolute;
+			left: 840px;
+			top: 0px;
+		}
+		#six{
+			width: 210px;
+			height: 1000px;
+			background-color: transparent;
+			position: absolute;
+			left: 1050px;
+			top: 0px;
+		}
+		#seven{
+			width: 210px;
+			height: 1000px;
+			background-color: transparent;
+			position: absolute;
+			left: 1260px;
+			top: 0px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id ="one"></div>
+	<div id ="two"></div>
+	<div id ="three"></div>
+	<div id ="four"></div>
+	<div id ="five"></div>
+	<div id ="six"></div>
+	<div id ="seven"></div>
+	
+	<div class = "video-container">
+		<iframe src="https://www.youtube.com/embed/Z-4u_dPY-aM?&mute=1&playsinline=1"></iframe>
+	</div>
+
+	<audio id="songo" src="song.mp3" ></audio>
+
+	<script type="text/javascript">
+
+
+		var counter=0;
+		one.addEventListener("click",
+		function()
+	{ counter= counter+1;
+
+		if (counter%2==1){
+			songo.play()
+		}
+
+		else if (counter%2==0){
+			songo.pause()
+		}
+
+		function changeColor(){
+		var a = Math.round(Math.random()*255)
+
+		var b = Math.round(Math.random()*255)
+
+		var c = Math.round(Math.random()*255)
+
+		one.style.backgroundColor="rgb("+a +","+b+","+c+ ")";
+		
+
+		var d = Math.round(Math.random()*255)
+
+		var e = Math.round(Math.random()*255)
+
+		var f = Math.round(Math.random()*255)
+
+		two.style.backgroundColor="rgb("+d +","+e+","+f+ ")";
+		
+		var g = Math.round(Math.random()*255)
+
+		var h = Math.round(Math.random()*255)
+
+		var i = Math.round(Math.random()*255)
+
+		three.style.backgroundColor="rgb("+g +","+h+","+i+ ")";
+		
+		var j = Math.round(Math.random()*255)
+
+		var k = Math.round(Math.random()*255)
+
+		var l = Math.round(Math.random()*255)
+
+		four.style.backgroundColor="rgb("+j +","+k+","+l+ ")";
+		
+		var m = Math.round(Math.random()*255)
+
+		var n = Math.round(Math.random()*255)
+
+		var o = Math.round(Math.random()*255)
+
+		five.style.backgroundColor="rgb("+m +","+n+","+o+ ")";
+		
+		var p = Math.round(Math.random()*255)
+
+		var q = Math.round(Math.random()*255)
+
+		var r = Math.round(Math.random()*255)
+
+		six.style.backgroundColor="rgb("+p +","+q+","+r+ ")";
+		
+		var s = Math.round(Math.random()*255)
+
+		var t = Math.round(Math.random()*255)
+
+		var u = Math.round(Math.random()*255)
+
+		seven.style.backgroundColor="rgb("+s +","+t+","+u+ ")";}
+		setInterval(changeColor, 469.48)
+
+		
+
+
+	})
+
+	</script>
+</body>
+</html>

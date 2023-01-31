@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.idk{
+			width: 200px;
+			height: 300px;
+			background-color: deeppink;
+			display: inline-block;
+			margin: 10px;
+			border-radius: 50%;
+
+
+		}
+	</style>
+</head>
+<body>
+
+
+	<script>
+		function makeIDK(eeee){
+			var idk = document.createElement('div');
+			document.body.appendChild(idk);
+			idk.classList.add('idk');
+			idk.innerText = eeee
+ 
+		}
+		for (var i=1; i<1001; i=i+1){makeIDK(i)
+		}
+
+
+
+	</script>
+
+</body>
+</html>
