@@ -95,20 +95,6 @@
 
 	<script type="text/javascript">
 
-
-		var counter=0;
-		one.addEventListener("click",
-		function()
-	{ counter= counter+1;
-
-		if (counter%2==1){
-			songo.play()
-		}
-
-		else if (counter%2==0){
-			songo.pause()
-		}
-
 		function changeColor(){
 		var a = Math.round(Math.random()*255)
 
@@ -166,12 +152,36 @@
 		var u = Math.round(Math.random()*255)
 
 		seven.style.backgroundColor="rgb("+s +","+t+","+u+ ")";}
-		setInterval(changeColor, 469.48)
+
+
+
+var x; 
+
+		var counter=0;
+		one.addEventListener("click",
+		function()
+	{ counter= counter+1;
+
+		if (counter%2==1){
+			songo.play()
+			x = setInterval(changeColor, 469.48)
+			
+
+		}
+
+		else if (counter%2==0){
+			songo.pause()
+			clearInterval(x)
+
+		}
 
 		
 
-
+		
 	})
+
+	
+
 
 	</script>
 </body>
