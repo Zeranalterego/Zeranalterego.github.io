@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+	<style type="text/css">
+		#one{
+			width:250px;
+			height:250px;
+			background-color:transparent;
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+
+		}
+		#two{
+			width:250px;
+			height:250px;
+			background-color:transparent;
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			left: 250px;
+			top: 0px;
+		}
+		#three{
+			width:250px;
+			height:250px;
+			background-color:transparent;
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			left: 500px;
+			top: 0px;
+
+		}
+
+		#four{
+			width:250px;
+			height:250px;
+			background-color:transparent;
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			left: 0px;
+			top: 250px;
+
+		}
+		#five{
+			width:250px;
+			height:250px;
+			background-color:transparent;
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			left: 250px;
+			top: 250px;
+
+		}
+		#six{
+			width:250px;
+			height:250px;
+			background-color:transparent;
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			left: 500px;
+			top: 250px;
+
+		}
+		#seven{
+			width:250px;
+			height:250px;
+			background-color:transparent;
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			left: 0px;
+			top: 500px;
+
+		}
+		#eight{
+			width:250px;
+			height:250px;
+			background-color:transparent;
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			left: 250px;
+			top: 500px;
+
+		}
+		#nine{
+			width:250px;
+			height:250px;
+			background-color:transparent;
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			left: 500px;
+			top: 500px;
+
+		}
+
+		#win{
+			width: 400px;
+			height: 400px;
+			background-color: transparent;
+			color: transparent;
+			font-family: 'Poppins';
+			font-size: 15px;
+			position: absolute;
+			left: 175px;
+			top: 250px;
+			z-index: -1;
+
+		}
+	</style>
+</head>
+<body>
+		<div id = "one"></div>
+		<div id = "two"></div>
+		<div id = "three"></div>
+		<div id = "four"></div>
+		<div id = "five" ></div>
+		<div id = "six"></div>
+		<div id = "seven"></div>
+		<div id = "eight"></div>
+		<div id = "nine"></div>
+		<div id = "win"></div>
+
+		<script type="text/javascript">
+			var switch1;
+			var switch2;
+			alert("The amount of time this took me is unholy. Mummy don't know daddy's getting hot At the body shop, doing something unholy He lucky, lucky, yeah (ooh) He lucky, lucky, yeah (ye-yeah) He lucky, lucky, yeah He lucky, lucky, yeah A lucky, lucky girl She got married to a boy like you She'd kick you out if she ever, ever knew Bout all the - you tell me that you do Dirty, dirty boy You know everyone is talking on the scene I hear them whispering 'bout the places that you've been And how you don't know how to keep your business clean Mummy don't know daddy's getting hot At the body shop, doing something unholy He's sat back while she's dropping it, she be popping it Yeah, she put it down slowly Oh-ee-oh-ee-oh, he left his kids at Ho-ee-oh-ee-ome, so he can get that Mummy don't know daddy's getting hot At the body shop, doing something unholy (woo) Mmm, daddy, daddy, if you want it, drop the add'y (yuh) Give me love, give me Fendi, my Balenciaga daddy You gon' need to bag it up, 'cause I'm spending on Rodeo (woo) You can watch me back it up, I'll be gone in the a.m And he, he get me Prada, get me Miu Miu like Rihanna (ah) He always call me 'cause I never cause no drama And when you want it, baby, I know I got you covered And when you need it, baby, just jump under the covers Mummy don't know daddy's getting hot At the body shop, doin' somethin' unholy He's sat back while she's dropping it, she be popping it Yeah, she put it down slowly Oh-ee-oh-ee-oh, he left his kids at Ho-ee-oh-ee-ome, so he can get that Mummy don't know daddy's getting hot At the body shop, doin' something unholy")
+			var clickCounter = 0
+			var x = "white"
+
+			document.addEventListener("click", function(){
+				clickCounter = clickCounter +1;
+				console.log (clickCounter)
+			if (clickCounter %2 == 0){
+				x = "blue"
+				
+			
+			}
+			else if (clickCounter %2 == 1){
+				x = "red"
+		
+			
+			}
+
+			})
+			
+			
+		
+
+			one.addEventListener("click",function(){
+				one.style.backgroundColor = x
+				console.log(one.style.backgroundColor)
+			})
+			two.addEventListener("click",function(){two.style.backgroundColor = x
+				console.log(two.style.backgroundColor)
+				
+			})
+			three.addEventListener("click",function(){three.style.backgroundColor = x
+				console.log(three.style.backgroundColor)
+				
+			})
+			four.addEventListener("click",function(){four.style.backgroundColor = x
+				console.log(four.style.backgroundColor)
+				
+			})
+			five.addEventListener("click",function(){five.style.backgroundColor = x
+				console.log(five.style.backgroundColor)
+				
+			})
+			six.addEventListener("click",function(){six.style.backgroundColor = x
+				console.log(six.style.backgroundColor)
+				
+			})
+			seven.addEventListener("click",function(){
+				seven.style.backgroundColor = x
+				console.log(seven.style.backgroundColor)
+
+				
+			})
+			eight.addEventListener("click",function(){eight.style.backgroundColor = x
+				console.log(eight.style.backgroundColor)
+				
+			})
+			nine.addEventListener("click",function(){nine.style.backgroundColor = x
+				console.log(nine.style.backgroundColor)
+				
+			})
+			
+
+			
+		
+	
+			
+			
+
+			if (one.style.backgroundColor == "blue" & two.style.backgroundColor == "blue" & three.style.backgroundColor == "blue"){win.innerText = "SOMEONE HAS WON THE GAME OF TIC TAC TOE"
+			win.style.zIndex = "2";
+			win.style.color = "black"
+			}
+
+
+			
+
+
+		</script>
+</body>
+</html>

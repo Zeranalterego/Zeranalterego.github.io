@@ -1,0 +1,48 @@
+circles are moving randomly while changing color
+different size circles
+when mouse is moving circles are condensed together and follow the mouse
+when mouse is resting circles expand and enter into a color changing moving randomly animation
+still changing colors when its moving with the mouse 
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#circle{
+			width: 100px;
+			height: 100px;
+			background-color: blueviolet;
+			border-radius: 50%;
+			position: absolute;
+
+		}
+	</style>
+</head>
+<body>
+	<div id ="circle"></div>
+	<script type="text/javascript">
+		alert("it's been a long time since I came up with an alert I now have had two kids and I live in a little island right off the coast of Madagascar with the penguins from, you guessed it, Madagascar. Rico is the best one in my opinion but don't tell Skipper that or he'll take another one of my kids I only have Johnny left to myself this is a secret cry for help guys")
+
+		circle.style.left = Math.random()*200+ "px"
+		function changeColor(){
+		var a = Math.round(Math.random()*255)
+
+		var b = Math.round(Math.random()*255)
+
+		var c = Math.round(Math.random()*255)
+
+		circle.style.backgroundColor="rgb("+a +","+b+","+c+ ")";
+	}
+		
+		setInterval(changeColor, 200)
+
+
+		function changePosition(){
+		var x = parseInt(circle.style.left) 
+		circle.style.left = x + + Math.random()*10+"px"}
+		
+		setInterval(changePosition, 200) 
+
+	</script>
+
+</body>
+</html>
